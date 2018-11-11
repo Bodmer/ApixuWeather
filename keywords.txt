@@ -1,0 +1,8 @@
+ApixuWeather	KEYWORD1
+Apixu_Weather	KEYWORD1
+
+getForecast	KEYWORD2
+parseRequest	KEYWORD2
+iconName	KEYWORD2
+APW_current	KEYWORD2
+APW_forecast	KEYWORD2
