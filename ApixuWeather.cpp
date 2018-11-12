@@ -11,8 +11,6 @@
   #include <WiFi.h>
 #endif
 
-#include <WiFiClient.h>
-
 // The streaming parser to use is not the Arduino IDE library manager default,
 // but this one which is slightly different and renamed to avoid conflicts:
 // https://github.com/Bodmer/JSON_Decoder
@@ -370,8 +368,7 @@ void Apixu_Weather::setMetric(bool m)
 ** Function name:           value (full data set)
 ** Description:             Stores the parsed data in the structures for sketch access
 ***************************************************************************************/
- // Nested "if" with "return" reduces comparison count for each key
- 
+
 void Apixu_Weather::value(const char *val) {
 
   String value = val;

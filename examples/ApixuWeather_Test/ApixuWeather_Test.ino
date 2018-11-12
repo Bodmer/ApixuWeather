@@ -83,7 +83,7 @@ void loop() {
   apw.setMetric(false); // inches rain, deg.F, inches pressure, mph
   printCurrentWeather();
 
-  delay(5 * 60 * 1000UL); // Every 5 minutes
+  delay(5UL * 60UL * 1000UL); // Every 5 minutes
 
 }
 
@@ -104,14 +104,12 @@ void printCurrentWeather()
 
   Serial.println("Weather from Apixu\n");
 
-  // We can use the timezone to set the offset eventually...
-  // Serial.print("Timezone            : "); Serial.println(current->timezone);
-  
+
   Serial.println("############### Current weather ###############\n");
 
   Serial.print("name               : "); Serial.println(current->name);
   Serial.print("region             : "); Serial.println(current->region);
-  Serial.print("rcountry           : "); Serial.println(current->country);
+  Serial.print("country            : "); Serial.println(current->country);
   Serial.print("localtime_epoch    : "); Serial.print(strTime(current->localtime_epoch));
   Serial.print("last_updated_epoch : "); Serial.print(strTime(current->last_updated_epoch));
   Serial.print("text               : "); Serial.println(current->text);
