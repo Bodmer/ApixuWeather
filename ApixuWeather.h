@@ -53,7 +53,7 @@ class Apixu_Weather: public JsonListener {
 
     // Streaming parser callback functions, allow tracking and decisions
     void startDocument(); // JSON document has started, typically starts once
-                          // Initialises varaibles used, e.g. sets objectLayer = 0
+                          // Initialises variables used, e.g. sets objectLayer = 0
                           // and arrayIndex =0
     void endDocument();   // JSON document has ended, typically ends once
 
